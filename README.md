@@ -3,6 +3,7 @@ I was tasked to use Python to build and evaluate several machine learning models
 
 ## Random Oversampling
 Class imbalance refers to a situation in which the existing classes in a dataset aren't equally represented. One method we used to get past this was to use random oversampling. In random oversampling, instances of the minority class are randomly selected and added to the training set until the majority and minority classes are balanced. 
+
 ![oversampling](https://user-images.githubusercontent.com/68392225/99113309-a48d5980-25b4-11eb-885d-d13e7c490b7e.png)
 
 Once we resampled the dataset 
@@ -13,6 +14,7 @@ Once we resampled the dataset
 
 ## SMOTE Oversampling
 The second method used to deal with imbalanced datasets was SMOTE. With SMOTE instead of randomly selecting data instances to balance them out, new instances are interpolated from a number of its closest neighbors. Based on the values of these neighbors, new values are created.
+
 ![SMOTE](https://user-images.githubusercontent.com/68392225/99116453-aa396e00-25b9-11eb-8fa3-2cdf87ca6e3b.png)
 
 The results of our SMOTE oversampling were slightly better.
@@ -23,6 +25,7 @@ The results of our SMOTE oversampling were slightly better.
 
 ## Undersampling
 Undersampling is another technique to address class imbalance. Instead of increasing the size of the minority sample, undersampling decreases the size of the majority. 
+
 ![undersampling](https://user-images.githubusercontent.com/68392225/99117923-33ea3b00-25bc-11eb-9260-eb3064e898d5.png)
 
 The undersampling test was not as successful as the previous two tests.
@@ -33,6 +36,7 @@ The undersampling test was not as successful as the previous two tests.
 
 ## SMOTEENN and Combination Sampling
 SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. SMOTEENN oversamples the minority class and clean the resulting data with an undersampling strategy.
+
 ![Combo](https://user-images.githubusercontent.com/68392225/99118429-1f5a7280-25bd-11eb-8719-af3e938739cd.png)
 
 * Our balanced accuracy score was 64%
@@ -40,3 +44,9 @@ SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. SMOTE
 * Our precision and our recall scores for people that are at a low risk for credit fraud are 1.00 and 0.57
 * Our high risk F1 score rose to 0.02, and our low risk F1 score went up to 0.73
 * Results improved from undersampling, but still not the highest or best results. 
+
+## Balanced Random Forest Classifier
+
+![BRFC](https://user-images.githubusercontent.com/68392225/99118857-e66ecd80-25bd-11eb-8028-4d24fa6a5870.png)
+
+
