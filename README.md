@@ -20,3 +20,23 @@ The results of our SMOTE oversampling were slightly better.
 * Our precision and our recall scores for people that are high risk for credit fraud are 0.01 and 0.67 
 * Our precision and our recall scores for people that are at a low risk for credit fraud are 1.00 and 0.63
 * Our high risk F1 score remained the same, and our low risk F1 score went down to 0.77
+
+## Undersampling
+Undersampling is another technique to address class imbalance. Instead of increasing the size of the minority sample, undersampling decreases the size of the majority. 
+![undersampling](https://user-images.githubusercontent.com/68392225/99117923-33ea3b00-25bc-11eb-9260-eb3064e898d5.png)
+
+The undersampling test was not as successful as the previous two tests.
+* Our balanced accuracy score was 51%
+* Our precision and our recall scores for people that are high risk for credit fraud are 0.01 and 0.63 
+* Our precision and our recall scores for people that are at a low risk for credit fraud are 1.00 and 0.39
+* Our high risk F1 score dropped to 0.01, and our low risk F1 score went down to 0.56
+
+## SMOTEENN and Combination Sampling
+SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. SMOTEENN oversamples the minority class and clean the resulting data with an undersampling strategy.
+![Combo](https://user-images.githubusercontent.com/68392225/99118429-1f5a7280-25bd-11eb-8719-af3e938739cd.png)
+
+* Our balanced accuracy score was 64%
+* Our precision and our recall scores for people that are high risk for credit fraud are 0.01 and 0.70 
+* Our precision and our recall scores for people that are at a low risk for credit fraud are 1.00 and 0.57
+* Our high risk F1 score rose to 0.02, and our low risk F1 score went up to 0.73
+* Results improved from undersampling, but still not the highest or best results. 
